@@ -1,0 +1,67 @@
+First , i opened the search and wrote: git cmd
+
+#cd downloads => is used to change the current directory to a folder named "downloads"
+
+#git --v => to make sure it exists and what its version are
+
+#git status => to know the condition he is in now
+
+#mkdir libanux-website => to create a folder
+
+#cd web-Nexcent => we have entered the file
+
+#git init => the command git init converts any regular folder into a Git project
+
+#notepad README.md => you can create a file and open it in Notepad to write or add whatever you want inside ( searched for something similar to nano but for Windows, i could also create it using the touch command)
+
+#notepad index.html => i created another file 
+
+#git add . => this will add the files in the current directory(and subdirectories) to the staging area
+
+#git commit -m "chore: initial website structure with README and index.html" => to commit the changes you've added to the staging area with the message description
+
+#git remote add origin https://github.com/KhadijaShames/web-Nexcent.git => the command is used to link your local Git repository to a remote repository (e.g., on GitHub, GitLab, or Bitbucket)
+
+#git branch -M main => renamed the current branch to main
+
+#git push -u origin main => used when you want to push to the main branch on GitHub for the first time.
+
+#notepad commands.txt => created a file named commands.txt in Notepad 
+
+#mkdir pages styles assets scripts => this command creates four directories (folders): pages, styles, assets. These are used to organize the project structure.
+pages: Will hold the HTML files
+styles: Will contain the CSS files
+assets: Will store images, fonts, and other static assets
+
+#cd styles => this changes the current directory to the styles folder
+
+#notepad styles.css => this opens Notepad and creates the styles.css file inside the styles directory
+
+#cd .. => this takes you back to the parent directory
+
+#cd assets => this changes the current directory to the assets folder
+
+#mkdir images => this creates a folder named images inside the assets folder to store image files
+i added images to the images folder within the assets folder
+
+#cd .. => this takes you back to the parent directory
+
+#code . => this opens the current directory in Visual Studio Code. If you're using VS Code, this command launches the editor to work on your files
+
+#git add . => this stages all the changes made (i.e., the files and folders you created or modified) in the current directory and subdirectories, preparing them to be committed
+
+#git push origin main => pushed the changes, including the new image, to the main branch on GitHub
+
+#git add commands.txt => added the commands.txt file to be tracked by Git
+
+#git commit -m "docs: add commands.txt with Git command history" => Committed the addition of the commands.txt file with a comment describing its content (Git command history)
+
+#git push origin main => pushed the commands.txt file update to the main branch on GitHub
+
+#git commit -m "feat: update website structure with pages, styles, and images" => this commits the staged changes with the message "feat: update website structure with pages, styles, and images". It describes the changes 
+you made to the website structure, such as adding new pages, styles, and assets (like logos)
+
+#git pull origin main --no-edit => this pulls the latest changes from the main branch on GitHub, and merges them into your local repository without changing the commit message 
+(since you're using the --no-edit option). This is helpful if someone else has pushed changes to the repository that you need to integrate into your local version
+
+#git push origin main => this pushes your local changes (committed files) to the main branch on the remote GitHub repository
