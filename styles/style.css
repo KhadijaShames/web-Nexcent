@@ -36,7 +36,7 @@ p {
   font-size: 16px;
   display: inline-block;
   margin-top: 1em;
-   width: fit-content;
+  width: fit-content;
 }
 
 * {
@@ -54,6 +54,7 @@ p {
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
+  flex-wrap: wrap;
 }
 
 /* Navbar */
@@ -85,6 +86,7 @@ header.navbar {
   display: flex;
   gap: 32px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .nav-links a {
@@ -97,6 +99,7 @@ header.navbar {
 .nav-buttons {
   display: flex;
   gap: 14px;
+  flex-wrap: wrap;
 }
 
 .nav-buttons a {
@@ -104,7 +107,6 @@ header.navbar {
   padding: 10px 20px;
   font-size: 16px;
   border-radius: 4px;
- 
 }
 
 .login {
@@ -141,14 +143,14 @@ header.navbar {
 }
 
 .hero .image img {
-  max-width: 50%;
+  max-width: 100%;
   height: auto;
 }
 
 /* Clients */
 .clients {
   width: 100%;
-  padding: 3em 144px;
+  padding: 3em 20px;
   margin: auto;
   text-align: center;
   background-color: #fff;
@@ -162,7 +164,7 @@ header.navbar {
 .client-logos {
   margin-top: 2em;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 16px;
@@ -182,19 +184,19 @@ header.navbar {
 
 .feature-boxes {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 90px;
+  gap: 40px;
 }
 
 .box {
-  flex: 1;
-  min-width: 240px;
+  flex: 1 1 240px;
   background-color: #fff;
   padding: 24px;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s;
+  max-width: 320px;
 }
 
 .box:hover {
@@ -209,12 +211,12 @@ header.navbar {
 /* Story */
 .story {
   width: 100%;
-  height: 433px;
-  padding: 0 144px;
+  padding: 40px 20px;
   background-color: #fff;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 20px;
 }
 
 .story.alt {
@@ -226,22 +228,22 @@ header.navbar {
   flex-direction: row;
   align-items: center;
   gap: 8px;
+  flex-wrap: wrap;
 }
 
 .story .image {
-  flex: 0 0 442px;
-  height: 433px;
+  flex: 1 1 300px;
+  height: auto;
 }
 
 .story .image img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
 }
 
 .story .text {
-  flex: 0 0 661px;
-  height: 268px;
+  flex: 1 1 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -261,16 +263,16 @@ header.navbar {
 }
 
 .stat-row {
-  width: 540px;
-  height: 60px;
+  max-width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 30px;
+  flex-wrap: wrap;
   margin: 20px auto;
 }
 
 .stat-item {
-  flex: 1;
+  flex: 1 1 150px;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -291,30 +293,33 @@ header.navbar {
 
 /* Testimonials */
 .testimonials {
-  width: 1350px;
-  height: 390px;
-  padding: 32px 144px;
+  width: 100%;
+  padding: 32px 20px;
   background: #F5F7FA;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
 }
 
 .testimonial-box {
   display: flex;
-  gap: 60px;
+  gap: 40px;
   align-items: center;
-  height: 200px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .testimonial-box img {
-  width: 326px;
-  height: 326px;
+  width: 100%;
+  max-width: 326px;
+  height: auto;
   border-radius: 8px;
   object-fit: cover;
 }
 
 .testimonial-text {
-  width: 748px;
-  height: 324px;
+  max-width: 748px;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -323,7 +328,7 @@ header.navbar {
 
 /* Blog */
 .blog {
-  padding: 4em 0;
+  padding: 4em 20px;
   background-color: #f7f7f7;
   text-align: center;
 }
@@ -338,7 +343,8 @@ header.navbar {
 
 .card {
   background: #fff;
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   overflow: hidden;
@@ -346,11 +352,10 @@ header.navbar {
 
 .card img {
   width: 100%;
-  height: 286px;
+  height: auto;
   object-fit: cover;
   border-radius: 8px 8px 0 0;
 }
-
 
 .card a {
   display: inline-block;
@@ -363,7 +368,7 @@ header.navbar {
 /* New Section */
 .new-section {
   width: 100%;
-  height: 300px;
+  padding: 40px 20px;
   background-color: #f5f7fa;
   display: flex;
   align-items: center;
@@ -378,11 +383,11 @@ header.navbar {
 }
 
 .description {
-  width: 887px;
+  width: 100%;
+  max-width: 887px;
   font-size: 1.5rem;
   margin: 0;
 }
-
 
 /* Footer */
 .footer {
@@ -446,4 +451,38 @@ header.navbar {
 .footer-bottom img.arrow-icon {
   width: 10px;
   height: 10px;
+}
+
+/* Responsive Queries */
+@media (max-width: 768px) {
+  .hero-content,
+  .testimonial-box,
+  .feature-boxes,
+  .stat-row,
+  .story-section,
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stat-item {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .testimonial-text {
+    width: 100%;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .nav-links {
+    justify-content: center;
+  }
+
+  .nav-buttons {
+    justify-content: center;
+  }
 }
